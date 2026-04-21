@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sejara Industries — Disposable Plates, Cups & Packaging Manufacturer | India</title>
+  <meta name="description" content="Leading manufacturer of disposable plates, cups, bowls & food packaging in India. Eco-friendly, bulk supply, PAN India delivery. Get best wholesale prices!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --saffron: #FF6B2B;
+      --saffron-dark: #E55A1B;
+      --green: #2D8B4E;
+      --green-light: #E8F5E9;
+      --green-dark: #1B5E20;
+      --navy: #1A1F36;
+      --navy-light: #2A3150;
+      --cream: #FFF8F0;
+      --gold: #D4A853;
+      --gold-light: #F5E6C8;
+      --white: #FFFFFF;
+      --gray-50: #F9FAFB;
+      --gray-100: #F3F4F6;
+      --gray-200: #E5E7EB;
+      --gray-300: #D1D5DB;
+      --gray-500: #6B7280;
+      --gray-700: #374151;
+      --gray-900: #111827;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+      --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+      --radius: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+    }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Inter', 'Poppins', -apple-system, sans-serif;
+      color: var(--gray-900);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+    /* ===== TOP BAR ===== */
+    .top-bar {
+      background: var(--navy);
+      color: var(--white);
+      padding: 8px 0;
+      font-size: 13px;
+    }
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .top-bar a { color: var(--gold); }
+    .top-bar .whatsapp-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #25D366;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 12px;
+      transition: transform 0.2s;
+    }
+    .top-bar .whatsapp-link:hover { transform: scale(1.05); }
+    .top-bar .lang-toggle {
+      background: none;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      padding: 2px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    /* ===== HEADER / NAV ===== */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--gray-200);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+    .nav-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--saffron), var(--green));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: 900;
+      font-family: 'Poppins', sans-serif;
+    }
+    .logo-text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+    .logo-text span { color: var(--saffron); }
+    .logo-sub { font-size: 11px; color: var(--gray-500); letter-spacing: 1px; text-transform: uppercase; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .nav-links a {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--gray-700);
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-links a:hover { color: var(--saffron); }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--saffron);
+      transition: width 0.3s;
+    }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      background: var(--saffron) !important;
+      color: white !important;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-weight: 600 !important;
+      transition: background 0.2s, transform 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--saffron-dark) !important; transform: translateY(-1px); }
+    .nav-cta::after { display: none !important; }
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .mobile-toggle span {
+      width: 24px;
+      height: 2.5px;
+      background: var(--navy);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--cream) 0%, #FFF 50%, var(--green-light) 100%);
+      padding: 80px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255,107,43,0.08) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      left: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(45,139,78,0.06) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green-light);
+      color: var(--green-dark);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .hero-badge .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--navy);
+      margin-bottom: 20px;
+    }
+    .hero h1 .highlight {
+      background: linear-gradient(135deg, var(--saffron), #FF8F5E);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-hindi {
+      font-size: 18px;
+      color: var(--gray-500);
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .hero p {
+      font-size: 18px;
+      color: var(--gray-700);
+      margin-bottom: 32px;
+      max-width: 520px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: var(--saffron);
+      color: white;
+      box-shadow: 0 4px 14px rgba(255,107,43,0.35);
+    }
+    .btn-primary:hover {
+      background: var(--saffron-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255,107,43,0.4);
+    }
+    .btn-outline {
+      background: white;
+      color: var(--navy);
+      border: 2px solid var(--gray-200);
+    }
+    .btn-outline:hover {
+      border-color: var(--saffron);
+      color: var(--saffron);
+    }
+    .btn-green {
+      background: var(--green);
+      color: white;
+      box-shadow: 0 4px 14px rgba(45,139,78,0.3);
+    }
+    .btn-green:hover {
+      background: var(--green-dark);
+      transform: translateY(-2px);
+    }
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+    }
+    .hero-stat strong {
+      display: block;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--navy);
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero-stat span { font-size: 13px; color: var(--gray-500); }
+
+    .hero-visual {
+      position: relative;
+    }
+    .hero-image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .hero-img-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .hero-img-card:hover { transform: translateY(-4px); }
+    .hero-img-card:first-child {
+      grid-column: span 2;
+      background: linear-gradient(135deg, var(--saffron), #FF8F5E);
+      color: white;
+    }
+    .product-emoji {
+      font-size: 48px;
+      margin-bottom: 8px;
+    }
+    .hero-img-card h4 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .hero-img-card p {
+      font-size: 12px;
+      opacity: 0.8;
+      margin: 0;
+    }
+
+    /* ===== TRUST BAR ===== */
+    .trust-bar {
+      background: var(--navy);
+      padding: 24px 0;
+      color: white;
+    }
+    .trust-items {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .trust-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    /* ===== PRODUCTS ===== */
+    .products {
+      padding: 100px 0;
+      background: var(--gray-50);
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--saffron);
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .section-header h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .section-header p {
+      font-size: 17px;
+      color: var(--gray-500);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .product-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s;
+      border: 1px solid var(--gray-100);
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--saffron);
+    }
+    .product-img {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+      position: relative;
+    }
+    .product-img.plates { background: linear-gradient(135deg, #FFF3E0, #FFE0B2); }
+    .product-img.cups { background: linear-gradient(135deg, #E8F5E9, #C8E6C9); }
+    .product-img.bowls { background: linear-gradient(135deg, #E3F2FD, #BBDEFB); }
+    .product-img.containers { background: linear-gradient(135deg, #FFF8E1, #FFECB3); }
+    .product-img.trays { background: linear-gradient(135deg, #FCE4EC, #F8BBD0); }
+    .product-img.combos { background: linear-gradient(135deg, #F3E5F5, #E1BEE7); }
+    .product-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: var(--saffron);
+      color: white;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .eco-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--green);
+      color: white;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .product-info {
+      padding: 24px;
+    }
+    .product-info h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .product-info .hindi-name {
+      font-size: 13px;
+      color: var(--gray-500);
+      margin-bottom: 12px;
+    }
+    .product-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .product-features span {
+      background: var(--gray-100);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      color: var(--gray-700);
+    }
+    .product-sizes {
+      font-size: 13px;
+      color: var(--gray-500);
+      margin-bottom: 16px;
+    }
+    .product-sizes strong { color: var(--navy); }
+    .product-price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      border-top: 1px solid var(--gray-100);
+    }
+    .product-price .price {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--saffron);
+      font-family: 'Poppins', sans-serif;
+    }
+    .product-price .unit {
+      font-size: 13px;
+      color: var(--gray-500);
+      font-weight: 400;
+    }
+    .product-price .btn-small {
+      padding: 8px 16px;
+      font-size: 13px;
+      border-radius: 8px;
+    }
+
+    /* ===== WHY CHOOSE US ===== */
+    .why-us {
+      padding: 100px 0;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .why-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .why-card:hover {
+      border-color: var(--saffron);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+    .why-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--cream);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin: 0 auto 20px;
+    }
+    .why-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .why-card p {
+      font-size: 14px;
+      color: var(--gray-500);
+      line-height: 1.6;
+    }
+
+    /* ===== BULK / WHOLESALE ===== */
+    .bulk {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .bulk::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255,107,43,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .bulk .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .bulk h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .bulk h2 span { color: var(--gold); }
+    .bulk p {
+      font-size: 17px;
+      opacity: 0.85;
+      margin-bottom: 32px;
+    }
+    .bulk-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .bulk-feat {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+    }
+    .bulk-feat .check {
+      width: 28px;
+      height: 28px;
+      background: rgba(45,139,78,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4CAF50;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .bulk-form {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-xl);
+      padding: 36px;
+      backdrop-filter: blur(10px);
+    }
+    .bulk-form h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .bulk-form .form-sub {
+      font-size: 14px;
+      opacity: 0.7;
+      margin-bottom: 24px;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 6px;
+      opacity: 0.8;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      color: white;
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    .form-group input::placeholder, .form-group textarea::placeholder {
+      color: rgba(255,255,255,0.4);
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--saffron);
+    }
+    .form-group select option { background: var(--navy); color: white; }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .btn-submit {
+      width: 100%;
+      padding: 14px;
+      background: var(--saffron);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 8px;
+    }
+    .btn-submit:hover { background: var(--saffron-dark); transform: translateY(-1px); }
+    .form-note {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.5;
+      margin-top: 12px;
+    }
+
+    /* ===== INDUSTRIES ===== */
+    .industries {
+      padding: 100px 0;
+      background: var(--gray-50);
+    }
+    .industry-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 20px;
+    }
+    .industry-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 28px 16px;
+      text-align: center;
+      border: 1px solid var(--gray-100);
+      transition: all 0.3s;
+    }
+    .industry-card:hover {
+      border-color: var(--saffron);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .industry-card .emoji { font-size: 36px; margin-bottom: 12px; }
+    .industry-card h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .industry-card p { font-size: 12px; color: var(--gray-500); }
+
+    /* ===== ECO SECTION ===== */
+    .eco {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--green-light) 0%, #F1F8E9 100%);
+    }
+    .eco .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .eco h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .eco h2 span { color: var(--green); }
+    .eco p {
+      font-size: 17px;
+      color: var(--gray-700);
+      margin-bottom: 24px;
+    }
+    .eco-certs {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .eco-cert {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green-dark);
+      box-shadow: var(--shadow-sm);
+    }
+    .eco-visual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .eco-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+    }
+    .eco-card:first-child {
+      grid-column: span 2;
+      background: var(--green);
+      color: white;
+    }
+    .eco-card .emoji { font-size: 40px; margin-bottom: 8px; }
+    .eco-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+    .eco-card p { font-size: 13px; opacity: 0.8; margin: 0; }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials {
+      padding: 100px 0;
+    }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      transition: all 0.3s;
+    }
+    .testimonial-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--gold);
+    }
+    .stars { color: #FFC107; font-size: 16px; margin-bottom: 16px; }
+    .testimonial-card blockquote {
+      font-size: 15px;
+      color: var(--gray-700);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      background: var(--cream);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+    .author-info strong {
+      display: block;
+      font-size: 14px;
+      color: var(--navy);
+    }
+    .author-info span {
+      font-size: 12px;
+      color: var(--gray-500);
+    }
+
+    /* ===== PROCESS ===== */
+    .process {
+      padding: 100px 0;
+      background: var(--gray-50);
+    }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 48px;
+      left: 12.5%;
+      width: 75%;
+      height: 2px;
+      background: var(--gray-200);
+      z-index: 0;
+    }
+    .process-step {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .step-num {
+      width: 56px;
+      height: 56px;
+      background: var(--saffron);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 auto 16px;
+      font-family: 'Poppins', sans-serif;
+      box-shadow: 0 4px 12px rgba(255,107,43,0.3);
+    }
+    .process-step h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .process-step p {
+      font-size: 13px;
+      color: var(--gray-500);
+    }
+
+    /* ===== FAQ ===== */
+    .faq {
+      padding: 100px 0;
+    }
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: border-color 0.3s;
+    }
+    .faq-item:hover { border-color: var(--saffron); }
+    .faq-q {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--navy);
+      gap: 16px;
+    }
+    .faq-q .arrow {
+      font-size: 20px;
+      color: var(--saffron);
+      transition: transform 0.3s;
+      flex-shrink: 0;
+    }
+    .faq-item.active .faq-q .arrow { transform: rotate(180deg); }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .faq-item.active .faq-a { max-height: 300px; }
+    .faq-a-inner {
+      padding: 0 24px 20px;
+      font-size: 15px;
+      color: var(--gray-500);
+      line-height: 1.7;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--navy);
+      color: white;
+      padding: 60px 0 24px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand .logo-text { color: white; margin-bottom: 12px; }
+    .footer-brand p {
+      font-size: 14px;
+      opacity: 0.7;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .footer-social {
+      display: flex;
+      gap: 10px;
+    }
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: background 0.2s;
+    }
+    .footer-social a:hover { background: var(--saffron); }
+    .footer-col h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--gold);
+    }
+    .footer-col a {
+      display: block;
+      font-size: 14px;
+      opacity: 0.7;
+      padding: 4px 0;
+      transition: opacity 0.2s;
+    }
+    .footer-col a:hover { opacity: 1; color: var(--saffron); }
+    .footer-contact-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 14px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    .footer-contact-item .icon { font-size: 18px; flex-shrink: 0; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      opacity: 0.6;
+    }
+
+    /* ===== FLOATING WHATSAPP ===== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 200;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: white;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: transform 0.3s;
+      cursor: pointer;
+      animation: float 3s ease-in-out infinite;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .hero .container { grid-template-columns: 1fr; text-align: center; }
+      .hero h1 { font-size: 40px; }
+      .hero p { margin: 0 auto 32px; }
+      .hero-actions { justify-content: center; }
+      .hero-stats { justify-content: center; }
+      .hero-visual { display: none; }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .industry-grid { grid-template-columns: repeat(3, 1fr); }
+      .bulk .container { grid-template-columns: 1fr; }
+      .eco .container { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .mobile-toggle { display: flex; }
+      .hero h1 { font-size: 32px; }
+      .hero { padding: 50px 0 60px; }
+      .section-header h2 { font-size: 30px; }
+      .product-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .industry-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonial-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .process-steps::before { display: none; }
+      .bulk-features { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+      .trust-items { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <span>📞 <a href="tel:+919876543210">+91 98765 43210</a> &nbsp;|&nbsp; 🕐 Mon–Sat: 9 AM – 7 PM IST</span>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <a href="https://wa.me/919876543210" class="whatsapp-link" target="_blank">💬 WhatsApp पर बात करें</a>
+        <button class="lang-toggle" onclick="toggleLang()">हिंदी / EN</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <nav class="nav-main">
+        <a href="#" class="logo">
+          <div class="logo-icon">SP</div>
+          <div>
+            <div class="logo-text">Sejara<span>Industries</span></div>
+            <div class="logo-sub">Disposable Packaging</div>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="#products">Products</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#eco">Eco-Friendly</a>
+          <a href="#bulk">Bulk Order</a>
+          <a href="#faq">FAQ</a>
+          <a href="#bulk" class="nav-cta">Get Price Quote</a>
+        </div>
+        <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          ISO 9001 Certified Manufacturer
+        </div>
+        <h1>
+          India's Trusted<br>
+          <span class="highlight">Disposable Plates & Cups</span><br>
+          Manufacturer
+        </h1>
+        <p class="hero-hindi">🇮🇳 शादी हो, पार्टी हो या बिज़नेस — हर जगह भरोसेमंद पैकेजिंग</p>
+        <p>PAN India supply of eco-friendly disposable plates, cups, bowls & food containers. From 500 pieces to 5 lakh — we deliver bulk, we deliver fast.</p>
+        <div class="hero-actions">
+          <a href="#bulk" class="btn btn-primary">📋 Get Free Quote</a>
+          <a href="#products" class="btn btn-outline">View Products →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>15+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="hero-stat">
+            <strong>5000+</strong>
+            <span>Happy Clients</span>
+          </div>
+          <div class="hero-stat">
+            <strong>28</strong>
+            <span>States Covered</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-grid">
+          <div class="hero-img-card">
+            <div class="product-emoji">🍽️</div>
+            <h4>New: Areca Leaf Plates</h4>
+            <p>100% Natural · Compostable · Premium Look</p>
+          </div>
+          <div class="hero-img-card">
+            <div class="product-emoji">🥤</div>
+            <h4>Paper Cups</h4>
+            <p>Hot & Cold</p>
+          </div>
+          <div class="hero-img-card">
+            <div class="product-emoji">📦</div>
+            <h4>Food Containers</h4>
+            <p>Leak-Proof</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item">
+          <div class="trust-icon">🏆</div>
+          <span>ISO 9001:2015 Certified</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🌿</div>
+          <span>FSSAI Compliant Materials</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🚛</div>
+          <span>PAN India Delivery</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">💰</div>
+          <span>Best Wholesale Prices</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">⚡</div>
+          <span>48hr Dispatch</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">📦 Our Products</div>
+        <h2>Complete Range of Disposable Packaging</h2>
+        <p>From wedding feasts to restaurant takeaways — we have the right size, material, and price for every need.</p>
+      </div>
+      <div class="product-grid">
+
+        <!-- Plates -->
+        <div class="product-card">
+          <div class="product-img plates">
+            <span class="eco-badge">🌿 Eco</span>
+            🍽️
+          </div>
+          <div class="product-info">
+            <h3>Disposable Plates</h3>
+            <p class="hindi-name">डिस्पोजेबल प्लेट / पत्तल</p>
+            <div class="product-features">
+              <span>Areca Leaf</span>
+              <span>Paper</span>
+              <span>Plastic</span>
+              <span>Thermocol</span>
+            </div>
+            <p class="product-sizes"><strong>Sizes:</strong> 6" / 8" / 10" / 12" Round & Square</p>
+            <div class="product-price">
+              <div class="price">₹0.45 <span class="unit">/ piece</span></div>
+              <a href="#bulk" class="btn btn-primary btn-small">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cups -->
+        <div class="product-card">
+          <div class="product-img cups">
+            <span class="product-badge">Best Seller</span>
+            <span class="eco-badge">🌿 Eco</span>
+            ☕
+          </div>
+          <div class="product-info">
+            <h3>Paper & Plastic Cups</h3>
+            <p class="hindi-name">कागज़ के कप / प्लास्टिक कप</p>
+            <div class="product-features">
+              <span>Hot Cups</span>
+              <span>Cold Cups</span>
+              <span>Double Wall</span>
+              <span>Printed</span>
+            </div>
+            <p class="product-sizes"><strong>Sizes:</strong> 100ml / 150ml / 200ml / 250ml / 300ml</p>
+            <div class="product-price">
+              <div class="price">₹0.35 <span class="unit">/ piece</span></div>
+              <a href="#bulk" class="btn btn-primary btn-small">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bowls -->
+        <div class="product-card">
+          <div class="product-img bowls">
+            <span class="eco-badge">🌿 Eco</span>
+            🥣
+          </div>
+          <div class="product-info">
+            <h3>Disposable Bowls</h3>
+            <p class="hindi-name">डिस्पोजेबल कटोरी</p>
+            <div class="product-features">
+              <span>Soup Bowls</span>
+              <span>Ice Cream</span>
+              <span>Snack Bowls</span>
+            </div>
+            <p class="product-sizes"><strong>Sizes:</strong> 4oz / 6oz / 8oz / 12oz</p>
+            <div class="product-price">
+              <div class="price">₹0.50 <span class="unit">/ piece</span></div>
+              <a href="#bulk" class="btn btn-primary btn-small">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Containers -->
+        <div class="product-card">
+          <div class="product-img containers">
+            <span class="product-badge">Trending</span>
+            📦
+          </div>
+          <div class="product-info">
+            <h3>Food Containers</h3>
+            <p class="hindi-name">फूड कंटेनर / टिफिन बॉक्स</p>
+            <div class="product-features">
+              <span>Leak-Proof</span>
+              <span>Compartment</span>
+              <span>Microwave Safe</span>
+            </div>
+            <p class="product-sizes"><strong>Sizes:</strong> 250ml / 500ml / 750ml / 1000ml</p>
+            <div class="product-price">
+              <div class="price">₹1.80 <span class="unit">/ piece</span></div>
+              <a href="#bulk" class="btn btn-primary btn-small">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trays -->
+        <div class="product-card">
+          <div class="product-img trays">
+            🍱
+          </div>
+          <div class="product-info">
+            <h3>Serving Trays & Spoons</h3>
+            <p class="hindi-name">सर्विंग ट्रे और चम्मच</p>
+            <div class="product-features">
+              <span>Dinner Trays</span>
+              <span>Snack Trays</span>
+              <span>Wooden Spoons</span>
+            </div>
+            <p class="product-sizes"><strong>Sizes:</strong> 3-Compartment / 4-Compartment / 5-Compartment</p>
+            <div class="product-price">
+              <div class="price">₹1.20 <span class="unit">/ piece</span></div>
+              <a href="#bulk" class="btn btn-primary btn-small">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Combos -->
+        <div class="product-card">
+          <div class="product-img combos">
+            <span class="product-badge">Save 20%</span>
+            🎉
+          </div>
+          <div class="product-info">
+            <h3>Party & Wedding Combos</h3>
+            <p class="hindi-name">शादी / पार्टी कॉम्बो पैक</p>
+            <div class="product-features">
+              <span>50-Person Pack</span>
+              <span>100-Person Pack</span>
+              <span>Custom</span>
+            </div>
+            <p class="product-sizes"><strong>Includes:</strong> Plates + Cups + Bowls + Spoons + Napkins</p>
+            <div class="product-price">
+              <div class="price">₹12 <span class="unit">/ person</span></div>
+              <a href="#bulk" class="btn btn-primary btn-small">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">⭐ Why Sejara Industries</div>
+        <h2>Why 5000+ Businesses Trust Us</h2>
+        <p>Manufacturing excellence, unbeatable prices, and delivery to every pin code in India.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🏭</div>
+          <h3>Own Factory</h3>
+          <p>20,000 sq ft manufacturing unit in Gujarat. No middlemen — factory-direct prices.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💰</div>
+          <h3>Best Price Guarantee</h3>
+          <p>We beat any genuine quote. Bulk orders get extra 10-15% discount. No hidden charges.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🚀</div>
+          <h3>48-Hour Dispatch</h3>
+          <p>Stock items ship within 48 hours. Custom orders in 5-7 days. Express available.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🎨</div>
+          <h3>Custom Printing</h3>
+          <p>Your brand, your design. Logo printing on cups, plates & containers. Min order: 5,000 pcs.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">✅</div>
+          <h3>Quality Assured</h3>
+          <p>ISO certified. Food-grade materials. Every batch tested. Sample before you buy.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📞</div>
+          <h3>Dedicated Support</h3>
+          <p>Personal account manager for bulk clients. WhatsApp, call, or email — we respond fast.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🚛</div>
+          <h3>PAN India Delivery</h3>
+          <p>Partnerships with top logistics. Doorstep delivery to 28 states & 8 UTs. Free shipping on ₹50K+.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🔄</div>
+          <h3>Easy Returns</h3>
+          <p>Manufacturing defect? 100% replacement. No questions asked. That's our promise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BULK / WHOLESALE -->
+  <section class="bulk" id="bulk">
+    <div class="container">
+      <div>
+        <h2>Get <span>Wholesale Prices</span><br>for Your Business</h2>
+        <p>Whether you're a caterer, restaurant, event planner, or distributor — fill the form and get a custom price quote within 2 hours.</p>
+        <div class="bulk-features">
+          <div class="bulk-feat"><span class="check">✓</span> Factory-Direct Pricing</div>
+          <div class="bulk-feat"><span class="check">✓</span> No Minimum Order Limit</div>
+          <div class="bulk-feat"><span class="check">✓</span> Free Samples Available</div>
+          <div class="bulk-feat"><span class="check">✓</span> GST Invoice Provided</div>
+          <div class="bulk-feat"><span class="check">✓</span> Custom Branding Options</div>
+          <div class="bulk-feat"><span class="check">✓</span> Credit Terms for Regulars</div>
+        </div>
+      </div>
+      <div class="bulk-form">
+        <h3>📋 Request a Quote</h3>
+        <p class="form-sub">Free · No Obligation · Response in 2 Hours</p>
+        <form onsubmit="alert('Thank you! We will contact you within 2 hours.'); return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" placeholder="e.g., Rajesh Kumar" required>
+            </div>
+            <div class="form-group">
+              <label>Mobile Number *</label>
+              <input type="tel" placeholder="+91 98XXX XXXXX" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Business Name</label>
+            <input type="text" placeholder="e.g., Sharma Caterers">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>City / State *</label>
+              <input type="text" placeholder="e.g., Mumbai, Maharashtra" required>
+            </div>
+            <div class="form-group">
+              <label>Product Needed *</label>
+              <select required>
+                <option value="">Select Product</option>
+                <option>Plates (Paper/Plastic/Areca)</option>
+                <option>Paper Cups (Hot/Cold)</option>
+                <option>Bowls</option>
+                <option>Food Containers</option>
+                <option>Serving Trays & Spoons</option>
+                <option>Wedding/Party Combo</option>
+                <option>Custom Printed Items</option>
+                <option>Multiple Products</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Quantity Required</label>
+              <select>
+                <option value="">Select Quantity</option>
+                <option>500 – 1,000 pcs</option>
+                <option>1,000 – 5,000 pcs</option>
+                <option>5,000 – 10,000 pcs</option>
+                <option>10,000 – 50,000 pcs</option>
+                <option>50,000+ pcs (Lakh)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>When Do You Need It?</label>
+              <select>
+                <option value="">Select Timeline</option>
+                <option>Urgent (Within 3 days)</option>
+                <option>This Week</option>
+                <option>This Month</option>
+                <option>Ongoing / Regular Order</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Additional Details</label>
+            <textarea rows="3" placeholder="Any specific size, color, printing requirement?"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">📤 Get My Quote Now</button>
+          <p class="form-note">🔒 Your information is safe. We never share your data.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES WE SERVE -->
+  <section class="industries">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">🏢 Industries</div>
+        <h2>Who We Serve</h2>
+        <p>From street food vendors to five-star hotels — our packaging fits every scale.</p>
+      </div>
+      <div class="industry-grid">
+        <div class="industry-card">
+          <div class="emoji">🍛</div>
+          <h4>Restaurants & Dhabas</h4>
+          <p>Takeaway packaging</p>
+        </div>
+        <div class="industry-card">
+          <div class="emoji">🎪</div>
+          <h4>Event Planners</h4>
+          <p>Weddings, parties, poojas</p>
+        </div>
+        <div class="industry-card">
+          <div class="emoji">🏪</div>
+          <h4>Caterers</h4>
+          <p>Bulk food service</p>
+        </div>
+        <div class="industry-card">
+          <div class="emoji">🏫</div>
+          <h4>Hotels & Canteens</h4>
+          <p>Institutional supply</p>
+        </div>
+        <div class="industry-card">
+          <div class="emoji">🛒</div>
+          <h4>Retailers & Distributors</h4>
+          <p>Wholesale resale</p>
+        </div>
+        <div class="industry-card">
+          <div class="emoji">🚀</div>
+          <h4>Cloud Kitchens</h4>
+          <p>Delivery packaging</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECO-FRIENDLY -->
+  <section class="eco" id="eco">
+    <div class="container">
+      <div>
+        <h2>Go Green with <span>Sejara Industries Eco</span></h2>
+        <p>India is banning single-use plastics. Be ready with our 100% biodegradable and compostable alternatives — same convenience, zero guilt.</p>
+        <div class="eco-certs">
+          <div class="eco-cert">🌿 FSSAI Approved</div>
+          <div class="eco-cert">♻️ 100% Biodegradable</div>
+          <div class="eco-cert">🧪 Food-Grade Safe</div>
+          <div class="eco-cert">🇮🇳 Made in India</div>
+        </div>
+      </div>
+      <div class="eco-visual">
+        <div class="eco-card">
+          <div class="emoji">🌿</div>
+          <h4>Areca Leaf Collection</h4>
+          <p>Fallen palm leaves → Beautiful plates. Zero trees cut.</p>
+        </div>
+        <div class="eco-card">
+          <div class="emoji">📄</div>
+          <h4>Bagasse Plates</h4>
+          <p>Made from sugarcane waste</p>
+        </div>
+        <div class="eco-card">
+          <div class="emoji">🥢</div>
+          <h4>Wooden Cutlery</h4>
+          <p>Birchwood forks & spoons</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">💬 Reviews</div>
+        <h2>What Our Clients Say</h2>
+        <p>Real feedback from caterers, restaurant owners, and event planners across India.</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>"We ordered 10,000 plates for my daughter's wedding. Quality was superb — no breakage, no complaints. And the price was 30% less than our local market. Highly recommend!"</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨</div>
+            <div class="author-info">
+              <strong>Ramesh Patel</strong>
+              <span>Event Planner · Vadodara, Gujarat</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>"As a cloud kitchen owner, I need reliable packaging daily. Sejara Industries delivers on time every single time. Their leak-proof containers are a game changer for our biryani deliveries."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨</div>
+            <div class="author-info">
+              <strong>Faisal Ahmed</strong>
+              <span>Cloud Kitchen Owner · Hyderabad</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Got our restaurant logo printed on paper cups. Min order was reasonable, quality printing, and they even sent samples first. Very professional team. 🙏"</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">👩</div>
+            <div class="author-info">
+              <strong>Priya Sharma</strong>
+              <span>Café Owner · Jaipur, Rajasthan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">📋 How It Works</div>
+        <h2>Order in 4 Simple Steps</h2>
+        <p>From enquiry to delivery — seamless, transparent, and fast.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">1</div>
+          <h4>Send Enquiry</h4>
+          <p>Fill the form or WhatsApp us your requirements.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">2</div>
+          <h4>Get Quote</h4>
+          <p>Receive custom pricing with samples (if needed) within 2 hours.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">3</div>
+          <h4>Confirm Order</h4>
+          <p>Approve quote, share GST details, make 50% advance payment.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">4</div>
+          <h4>Doorstep Delivery</h4>
+          <p>Order dispatched in 48hrs. Tracking shared. Balance on delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">❓ FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Got questions? We've answered the most common ones below.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+            <span>What is the minimum order quantity (MOQ)?</span>
+            <span class="arrow">▾</span>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">Our standard MOQ is 500 pieces per product. For custom printed items, the MOQ is 5,000 pieces. Wedding/party combos have no MOQ — order for even 10 people!</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+            <span>Do you deliver across all of India?</span>
+            <span class="arrow">▾</span>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">Yes! We deliver to all 28 states and 8 Union Territories. Delivery is free for orders above ₹50,000. Standard delivery takes 3-7 days depending on your location. Express delivery is available for metro cities.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+            <span>Can I get samples before placing a bulk order?</span>
+            <span class="arrow">▾</span>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">Absolutely! We provide free samples for serious buyers. You just pay the shipping cost (typically ₹100-200). Samples are dispatched within 24 hours. This way you can check quality before committing.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+            <span>What payment methods do you accept?</span>
+            <span class="arrow">▾</span>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">We accept Bank Transfer (NEFT/RTGS), UPI (GPay, PhonePe, Paytm), Cheque, and Cash. For regular business clients, we also offer credit terms (30 days) after the first 3 successful orders. GST invoice provided for all transactions.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+            <span>Are your products eco-friendly and government compliant?</span>
+            <span class="arrow">▾</span>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">Yes! Our areca leaf, bagasse, and paper products are 100% biodegradable and comply with the government's single-use plastic ban. All food-contact products are FSSAI approved and made from food-grade materials.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">
+            <span>Can you print my brand logo on the products?</span>
+            <span class="arrow">▾</span>
+          </div>
+          <div class="faq-a"><div class="faq-a-inner">Yes! We offer custom branding on cups, plates, containers, and packaging. Send us your logo (AI/PDF/PNG format), and we'll share a digital mockup within 24 hours. Min order for custom printing: 5,000 pieces. One-time printing plate charges apply.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text" style="font-family:'Poppins',sans-serif; font-size:24px; font-weight:800;">Sejara <span style="color:var(--saffron)">Industries</span></div>
+          <p>India's trusted manufacturer of disposable plates, cups, bowls & food packaging. Factory-direct prices, eco-friendly options, PAN India delivery.</p>
+          <div class="footer-social">
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+            <a href="#">▶️</a>
+            <a href="#">💼</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a href="#">Disposable Plates</a>
+          <a href="#">Paper Cups</a>
+          <a href="#">Food Containers</a>
+          <a href="#">Bowls & Trays</a>
+          <a href="#">Areca Leaf Range</a>
+          <a href="#">Custom Printed</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Our Factory</a>
+          <a href="#">Quality Policy</a>
+          <a href="#">Become a Distributor</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <span class="icon">📍</span>
+            <span>Plot 42, GIDC Industrial Estate, Halol, Gujarat 389350</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📞</span>
+            <span>+91 98765 43210<br>+91 76543 21098</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📧</span>
+            <span>sales@sejaraindustries.in</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">🕐</span>
+            <span>Mon – Sat: 9 AM – 7 PM IST</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Sejara Industries. All rights reserved. | GST: 24XXXXX1234X1XX</span>
+        <span>Privacy Policy · Terms · Sitemap</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919876543210?text=Namaste!%20I%20want%20to%20enquire%20about%20disposable%20plates%20and%20cups." class="whatsapp-float" target="_blank">💬</a>
+
+  <script>
+    function toggleLang() {
+      alert('हिंदी भाषा जल्द ही उपलब्ध होगी! / Hindi language coming soon!');
+    }
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,26 +1,120 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-saffron: #FF6B2B;
+  --color-saffron-dark: #E55A1B;
+  --color-green: #2D8B4E;
+  --color-green-light: #E8F5E9;
+  --color-green-dark: #1B5E20;
+  --color-navy: #1A1F36;
+  --color-navy-light: #2A3150;
+  --color-cream: #FFF8F0;
+  --color-gold: #D4A853;
+  --color-gold-light: #F5E6C8;
+  --font-sans: "Inter", -apple-system, sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --radius-card: 16px;
+  --radius-xl: 24px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  color: var(--color-gray-900);
+  background: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes float-whatsapp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s infinite;
+}
+
+.animate-float-whatsapp {
+  animation: float-whatsapp 3s ease-in-out infinite;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-saffron), #FF8F5E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, var(--color-cream) 0%, #FFF 50%, var(--color-green-light) 100%);
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,107,43,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(45,139,78,0.06) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.bulk-bg {
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+}
+
+.bulk-bg::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,107,43,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.process-connector {
+  position: absolute;
+  top: 48px;
+  left: 12.5%;
+  width: 75%;
+  height: 2px;
+  background: var(--color-gray-200);
+  z-index: 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer.open {
+  max-height: 300px;
+}
+
+.whatsapp-float {
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
 }
