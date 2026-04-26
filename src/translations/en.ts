@@ -10,6 +10,7 @@ export const en: Translations = {
     subtitle: "Disposable Packaging",
     products: "Products",
     whyUs: "Why Us",
+    exportSejara: "Export Sejara",
     eco: "Eco-Friendly",
     bulk: "Bulk Order",
     faq: "FAQ",
@@ -145,6 +146,30 @@ export const en: Translations = {
       {
         title: "Easy Returns",
         desc: "Manufacturing defect? 100% replacement. No questions asked. That's our promise.",
+      },
+    ],
+  },
+  exportSejara: {
+    tag: "🌍 Export Sejara",
+    heading: "Exporting Quality Worldwide",
+    description:
+      "Sejara Industries is now taking orders for international markets. Premium disposable products, now available for global export.",
+    items: [
+      {
+        title: "USFDA Compliant",
+        desc: "All our products meet USFDA standards for food contact materials. Safe for international markets.",
+      },
+      {
+        title: "Global Shipping",
+        desc: "We ship to USA, UK, Europe, Middle East, and Southeast Asia. Reliable logistics partners.",
+      },
+      {
+        title: "Bulk Container Orders",
+        desc: "20ft and 40ft container shipments. MOQ starts from 1 container. Competitive FOB prices.",
+      },
+      {
+        title: "Customs Clearance",
+        desc: "Complete documentation support. We handle all export paperwork, certificates, and clearances.",
       },
     ],
   },

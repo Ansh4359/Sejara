@@ -13,6 +13,11 @@ export interface WhyItem {
   desc: string;
 }
 
+export interface ExportSejaraItem {
+  title: string;
+  desc: string;
+}
+
 export interface IndustryItem {
   name: string;
   desc: string;
@@ -49,6 +54,7 @@ export interface Translations {
     subtitle: string;
     products: string;
     whyUs: string;
+    exportSejara: string;
     eco: string;
     bulk: string;
     faq: string;
@@ -91,6 +97,12 @@ export interface Translations {
     heading: string;
     description: string;
     items: readonly WhyItem[];
+  };
+  exportSejara: {
+    tag: string;
+    heading: string;
+    description: string;
+    items: readonly ExportSejaraItem[];
   };
   bulkOrder: {
     headline1: string;

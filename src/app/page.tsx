@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import Products from "@/components/Products";
 import WhyUs from "@/components/WhyUs";
+import ExportSejara from "@/components/ExportSejara";
 import BulkOrder from "@/components/BulkOrder";
 import Industries from "@/components/Industries";
 import EcoFriendly from "@/components/EcoFriendly";
@@ -26,6 +27,7 @@ export default function Home() {
         <TrustBar />
         <Products />
         <WhyUs />
+        <ExportSejara />
         <BulkOrder />
         <Industries />
         <EcoFriendly />

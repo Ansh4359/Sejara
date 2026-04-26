@@ -50,6 +50,14 @@ export default function Header() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-saffron transition-all group-hover:w-full" />
             </a>
             <a
+              href="https://my-site-o8j8h9vj-sanjeevsinghfrm.wix-vibe-site.com" target="_blank"
+              className="text-[15px] font-medium text-gray-700 hover:text-saffron transition-colors relative group"
+              onClick={() => setOpen(false)}
+            >
+              {t.header.exportSejara}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-saffron transition-all group-hover:w-full" />
+            </a>
+            <a
               href="#eco"
               className="text-[15px] font-medium text-gray-700 hover:text-saffron transition-colors relative group"
               onClick={() => setOpen(false)}
@@ -65,6 +73,7 @@ export default function Header() {
               {t.header.bulk}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-saffron transition-all group-hover:w-full" />
             </a>
+    
             <a
               href="#faq"
               className="text-[15px] font-medium text-gray-700 hover:text-saffron transition-colors relative group"
